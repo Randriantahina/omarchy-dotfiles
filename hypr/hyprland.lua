@@ -36,3 +36,8 @@ o.window("Emulator", { float = true, center = true })
 -- zbus::Connection thread. This disables glycin's sandbox — trades away that
 -- sandboxing for correctness until upstream ships the timeout fix.
 hl.env("GLYCIN_DISABLE_SANDBOX", "i-know-the-risks")
+
+-- Give ~/.local/bin priority over /usr/share/omarchy/bin so user overrides
+-- of omarchy-* commands (e.g. omarchy-screensaver) win. hyprctl setenv
+-- doesn't reach the keybind/dispatch-spawned env, so this has to use hl.env.
+hl.env("PATH", os.getenv("HOME") .. "/.local/bin:" .. os.getenv("PATH"))
