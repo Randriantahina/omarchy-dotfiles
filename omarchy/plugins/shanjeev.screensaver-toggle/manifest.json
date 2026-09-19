@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "shanjeev.screensaver-toggle",
+  "name": "Screensaver Toggle",
+  "version": "1.0.0",
+  "author": "shanjeev",
+  "description": "Bar toggle that disables the screensaver while keeping the idle lock and screen-off",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Screensaver",
+    "defaultSection": "right"
+  }
+}
