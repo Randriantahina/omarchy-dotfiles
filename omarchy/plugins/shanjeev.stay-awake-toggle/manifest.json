@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "shanjeev.stay-awake-toggle",
+  "name": "Stay Awake Toggle",
+  "version": "1.0.0",
+  "author": "shanjeev",
+  "description": "Bar toggle for Omarchy's Stay Awake mode: no screensaver, no idle lock, no screen-off (e.g. while gaming)",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Stay Awake",
+    "defaultSection": "right"
+  }
+}
