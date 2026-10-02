@@ -18,8 +18,10 @@ BarWidget {
   Text {
     id: icon
     anchors.centerIn: parent
-    text: "📝"
-    font.pixelSize: Style.font.body
+    text: "󰎟"
+    color: root.bar ? root.bar.foreground : Color.foreground
+    font.family: Style.font.family
+    font.pixelSize: Style.font.body + 2
   }
 
   MouseArea {
