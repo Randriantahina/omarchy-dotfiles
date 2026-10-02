@@ -14,7 +14,8 @@
           "id": "omarchy.menu"
         },
         {
-          "id": "omarchy.workspaces"
+          "id": "tornikegomareli.spaces",
+          "iconSize": 16
         }
       ],
       "center": [
@@ -49,6 +50,9 @@
         },
         {
           "id": "meviusisback.mouse-settings"
+        },
+        {
+          "id": "shanjeev.todo"
         },
         {
           "id": "shanjeev.ambient"
