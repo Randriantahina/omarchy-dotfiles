@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "shanjeev.todo",
+  "name": "Todo",
+  "version": "1.0.0",
+  "author": "shanjeev",
+  "description": "Ephemeral daily todo list: bar icon opens a panel; data lives in the runtime tmpfs and is wiped at shutdown",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Todo.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Todo",
+    "defaultSection": "right"
+  }
+}
